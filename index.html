@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- css style link  -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- title name -->
+    <title>Eye</title>
+</head>
+<body>
+    <section class="main-section">
+        <div class="eye">
+            <div class="hair"> 
+
+            </div>
+            <div class="ball">
+                
+            </div>
+        </div>
+       <div class="eye">
+            <div class="hair"> 
+
+            </div>
+            <div class="ball">
+                
+            </div>
+        </div>
+    </section>
+    <script>
+        var ball = document.getElementsByClassName("ball");
+        document.onmusemove = function () {
+            var x = event.clientX * 100 / window.innerWidth + "%";
+            var Y = event.clientY * 100 / window.innerHeight + "%";
+            //event.clientX => gets the horizental cooordinate of the mouse
+            //event.clientX => gets the vartical cooordinate of the mouse
+            // window.innerheight => gets the browser height
+            // window.innerwidth => gets the browser width
+
+            for(var i=0; i<2; i++)
+            {
+                balls[i].style.left = X;
+                balls[i].style.top = Y;
+                balls[i].style.transform = "translate(-"+X+", -"+Y+")";
+            }
+        }
+    </script>
+     
+</body>
+</html>

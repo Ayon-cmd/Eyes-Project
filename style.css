@@ -1,0 +1,45 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #F7D248;
+}
+.main-section {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    width: 100%;
+}
+
+.eye {
+    width: 240px;
+    height: 120px;
+    background-color: #fff;
+    display: inline-block;
+    margin: 40px;
+    border-radius: 50%;
+    position: relative;
+}
+.ball {
+    width: 80px;
+    height: 40px;
+    background-color: #000;
+    border-radius: 50%;
+    top: 58%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    
+}
+.hair {
+    width: 100px;
+    height: 5px;
+    background-color: black;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    transform: translateY(-50%, -50%);
+    border-radius: 30%;
+
+}
